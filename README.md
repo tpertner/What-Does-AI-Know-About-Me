@@ -43,6 +43,10 @@ This repo gives you the tools to find out — and take action.
    ├── platform-comparison.md            # What each platform collects, stores, and shares
    ├── data-export-walkthrough.md        # Step-by-step: export your data from each platform
    └── privacy-action-checklist.md       # Actionable steps to lock down your AI footprint
+
+📁 talk/
+   ├── What-Does-AI-Know-About-Me-Talk.pdf   # Slides from the April 2026 talk (PDF)
+   └── What-Does-AI-Know-About-Me-Talk.pptx  # Slides as editable PowerPoint
 ```
 
 ## ⚠️ Important Caveats Before You Start
@@ -63,6 +67,32 @@ This toolkit is powerful, but the results require careful interpretation. Before
 4. Read what comes back — then decide what stays and what goes
 
 For deeper, platform-specific audits, use the individual prompt files in `prompts/`.
+
+## What the Output Actually Looks Like
+
+This is a real excerpt from running the audit prompt on my own ChatGPT account:
+
+<p align="center">
+  <img src="assets/audit-output-example.png" alt="Excerpt from a real ChatGPT audit response showing inferred professional context, communication patterns, and decision-making style" width="100%"/>
+</p>
+
+A few things to notice:
+
+- **Every line is tagged `[INFERRED]`** — none of this was explicitly told to ChatGPT. It's all derived from interaction patterns over time.
+- **The categories are deeply personal** — not just professional context, but communication style, decision-making patterns, and emotional tendencies.
+- **Some inferences are uncannily accurate** — others may be generic or wrong. Both possibilities matter: accurate inferences reveal what the model has profiled about you, and inaccurate ones reveal the assumptions it's making in your absence.
+
+I'm publishing this excerpt deliberately — not because it's harmless, but because the only way to make this conversation real is to show what the toolkit actually surfaces. **You should make a different call about your own results.** If you run this audit and see something you wouldn't want public, that's exactly the point of the toolkit. See the [incident response playbook](guides/privacy-action-checklist.md) for what to do next.
+
+## 🎤 The Talk
+
+**📅 Tuesday, April 14, 2026 | 🗣️ LinkedIn — Artificial Intelligence community (894 members)**
+
+A 15-minute lightning talk on AI data transparency, delivered to the Artificial Intelligence community on LinkedIn.
+
+**[View the slides →](talk/)** (available as PDF and PowerPoint)
+
+The deck covers the problem, the 3-layer framework, platform comparisons, real-world risks, and a live demo of the audit prompt running on ChatGPT. All statistics are cited; full references are on slide 8.
 
 ## Key Findings (2026)
 
@@ -119,7 +149,7 @@ The regulatory landscape is tightening. Understanding what AI knows about you is
 Tracy works across multimodal AI, agent-based architectures, prompt engineering, and AI governance — with a focus on making AI systems auditable, explainable, and production-ready. With a background in cybersecurity (University of Michigan), Harvard executive education, and certifications in penetration testing and incident response, Tracy brings a security-first lens to AI transparency.
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/tracypertner)
-- 🌐 [Blog](https://tpertner.github.io/)
+- 🌐 [Pertner Logic](https://tpertner.github.io/)
 - 💬 Questions about the toolkit? Open a [GitHub Issue](../../issues)
 
 *This toolkit was developed for a talk to the Artificial Intelligence community on LinkedIn, April 2026.*
