@@ -2,15 +2,6 @@
 # What-Does-AI-Know-About-Me — .gitignore
 # ============================================================
 
-# Private talk materials (DO NOT COMMIT)
-# The speaker deck and personal talk notes stay local only
-*.pptx
-*.ppt
-*.key
-talk/
-speaker-notes*
-talk-outline*
-
 # Audit results (may contain sensitive personal information)
 audit-results/
 *-audit-output.*
